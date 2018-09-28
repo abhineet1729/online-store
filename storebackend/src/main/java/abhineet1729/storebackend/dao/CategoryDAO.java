@@ -4,8 +4,15 @@ import java.util.List;
 
 import abhineet1729.storebackend.dto.Category;
 
-public interface CategoryDAO 
-{
+public interface CategoryDAO {
+
 	
-	List <Category> list();
+	
+	Category get(int id);
+	List<Category> list();
+	boolean add(Category category);
+	boolean update(Category category);
+	boolean delete(Category category);
+	
+	
 }
